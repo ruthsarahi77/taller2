@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+  <link rel="icon" href="https://storage.builderall.com//franquias/2/6632050/editor-html/6960627.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+</head>
+
+<body>
+
+    <!-- NAVBAR: Tomado de Flowbite -->
+    <nav class="bg-black w-full z-20 top-0 p-4 start-0 border-b border-gray-200">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
+            <a href="/index.html" class="flex items-center space-x-1 rtl:space-x-reverse">
+                <img src="https://www.abaltecuador.com/images/logo.png" alt="Logo">
+            </a>
+            <div class="flex md:order-2 bg-black md:space-x-0 rtl:space-x-reverse">
+                <button data-collapse-toggle="navbar-sticky" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                    aria-controls="navbar-sticky" aria-expanded="false">
+                    <span class="sr-only">Abrir menú principal</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                <ul
+                    class="flex flex-col p-4 md:p-0 mt-4 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+                    <li>
+                        <a href="/index.html"
+                            class="block py-2 px-3 hover:underline rounded-sm md:bg-transparent text-xl text-white hover:text-[#e30613] md:p-0"
+                            aria-current="page">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="/src/pages/nosotros.html"
+                            class="block py-2 px-3 underline text-[#e30613] rounded-sm text-xl hover:bg-gray-100 md:hover:bg-transparent hover:text-[#e30613] md:p-0 ">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="/src/pages/servicios.html"
+                            class="block py-2 px-3 text-white hover:underline rounded-sm  text-xl hover:bg-gray-100 md:hover:bg-transparent md:p-0 hover:text-[#e30613]">Servicios</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cards: tomado de Flowbite (Card with nav tabs) -->
+    <div class="w-full bg-white border border-gray-200 rounded-lg shadow-sm">
+        <ul class="flex mx-10 flex-wrap text-xl font-medium text-center text-black border-b border-gray-200 bg-gray-50"
+            id="defaultTab" data-tabs-toggle="#defaultTabContent" role="tablist">
+            <li class="me-2">
+                <button id="about-tab" data-tabs-target="#about" type="button" role="tab" aria-controls="about"
+                    aria-selected="true"
+                    class="inline-block p-4 text-[#3e2118] rounded-ss-lg hover:bg-gray-100">Sobre Abalt</button>
+            </li>
+            <li class="me-2">
+                <button id="services-tab" data-tabs-target="#services" type="button" role="tab" aria-controls="services"
+                    aria-selected="false" class="inline-block p-4 hover:text-gray-600 hover:bg-gray-100">Misión y Visión</button>
+            </li>
+            <li class="me-2">
+                <button id="statistics-tab" data-tabs-target="#statistics" type="button" role="tab"
+                    aria-controls="statistics" aria-selected="false"
+                    class="inline-block p-4 hover:text-gray-600 hover:bg-gray-100">Equipo</button>
+            </li>
+            
+        </ul>
+        <div id="defaultTabContent">
+            <div class="hidden p-4 bg-white rounded-lg md:p-8" id="about" role="tabpanel" aria-labelledby="about-tab">
+                <h2 class="mt-4 text-2xl font-bold tracking-tight text-xl text-gray-700">ABALT Contabilidad | Auditoría | Impuestos
+                </h2>
+                <p class="p-6 text-lg text-black">Brindamos soluciones integrales, con alto valor agregado que
+                    permiten a nuestros clientes generar ventajas competitivas para enfrentar los constantes cambios en
+                    el entorno globalizado. Para nosotros es importante como profesionales independientes, desempeñarnos
+                    en el campo de acción al que pertenecemos para cumplir a cabalidad el compromiso asumido con cada
+                    uno de los clientes de quienes hemos recibido gratos reconocimientos. Tener como meta que se cumplan
+                    los objetivos de aquellos clientes, nos dio sobre todo, su confianza.
+                </p>
+
+            </div>
+            <div class="hidden p-4 bg-white rounded-lg md:p-8" id="services" role="tabpanel"
+                aria-labelledby="services-tab">
+                <h2 class=" text-2xl font-bold tracking-tight text-lg text-gray-700">Los Abaldeanos tenemos como misión y visión:
+                </h2>
+            
+                <!-- List -->
+                <ul role="list" class="text-lg p-6 text-black">
+                    <p class="text-lg font-semibold text-gray-700">
+                    Misión:
+                </p>
+                    <li class="flex rtl:space-x-reverse items-center">
+                        <span class="leading-tight mb-4">Firma especializada en brindar servicios profesionales en las áreas financiera, contable, administrativa, tributaria, legal y de talento humano. Con los más altos estándares de calidad, ética y confidencialidad; a través del desarrollo continuo del mejor equipo de profesionales interdisciplinarios y procesos diseñados a la medida de sus clientes.</span>
+                    </li>
+
+                     <p class="text-lg font-semibold text-gray-700">
+                    Visión:
+                </p>
+                    <li class="flex rtl:space-x-reverse items-center">
+                        <span class="leading-tight mb-4">Ser una firma de reconocido prestigio internacional, orientada al cliente, brindando soluciones claves, integrales y efectivas para el éxito empresarial, constituyéndose en el referente líder de auditoría y consultoría en Ecuador.</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="hidden p-4 bg-white rounded-lg md:p-8" id="statistics" role="tabpanel"
+                aria-labelledby="statistics-tab">
+                <dl
+                    class="grid max-w-screen-xl text-lg grid-cols-2 gap-8 p-4 mx-auto text-gray-900 sm:grid-cols-3 xl:grid-cols-6">
+                    <div class="flex flex-col">
+                        <dt class="text-xl text-gray-700 font-semibold">Socia Principal</dt>
+                        <dd class="mb-2 text-gray-500">Paola Martínez</dd>
+                    </div>
+                    <div class="flex flex-col">
+                        <dt class="text-xl text-gray-700 font-semibold">Socio de Auditoría</dt>
+                        <dd class=" mb-2 text-gray-500">Héctor Vizuete</dd>
+                    </div>
+                    <div class="flex flex-col">
+                        <dt class="text-xl text-gray-700 font-semibold">Gerente de Auditoría</dt>
+                        <dd class="mb-2 text-gray-500">Sebastián Velasco</dd>
+                    </div>
+                    <div class="flex flex-col">
+                        <dt class="text-xl text-gray-700 font-semibold">Desarrollo de Negocios</dt>
+                        <dd class="mb-2 text-gray-500">Tania Vergara</dd>
+                    </div>
+                    <div class="flex flex-col">
+                        <dt class="text-xl text-gray-700 font-semibold">Gerente de Impuestos</dt>
+                        <dd class="mb-2 text-gray-500">Elisa Balseca</dd>
+                    </div>
+                </dl>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer: tomado de Flowbite   -->
+    <footer class="bg-black shadow-sm">
+        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+
+                    <span class="self-center text-2xl text-white font-semibold whitespace-nowrap">ABALT Auditores &
+                        Consultores</span>
+                </a>
+                <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-white sm:mb-0">
+                    <li>
+                        <a href="https://www.abaltecuador.com/index.php#templatemo-about" target="_blank"
+                            class="hover:underline me-4 md:me-6">Sobre Abalt</a>
+                    </li>
+                    <li>
+                        <a href="https://www.abaltecuador.com/trabaja_con_abalt.html" target="_blank"
+                            class="hover:underline me-4 md:me-6">Trabaja con nosotros</a>
+                    </li>
+                    <li>
+                        <a href="https://www.abaltecuador.com/contacto.php" target="_blank"
+                            class="hover:underline">Contáctanos</a>
+                    </li>
+                </ul>
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-white lg:my-8" />
+            <span class="block text-sm text-white sm:text-center">Copyright©2016 ABALTPARTNERS CIA.LTDA., AUDITSOLUTIONS
+                SOLUCIONES DE AUDITORIA INTEGRAL CIA. LTDA. y ABALTBUSINESS ADVISORS CÍA. LTDA. son firmas miembro de la
+                red de
+                empresas asociadas ABALT Auditores.
+                <br>
+                ABALT Auditores & Consultores es el nombre comercial de la red ABALT Auditores & Consultores y de cada
+                una de
+                las empresas asociadas de ABALT Auditores & Consultores. <br>
+
+                Cada una de las firmas miembro, es una entidad legal separada y no tiene ninguna responsabilidad
+                derivada de los
+                actos u omisiones de la otra entidad. Ninguna de las disposiciones o reglas de la red ABALT Auditores &
+                Consultores constituyen o implican una relación de sucursal entre ABALT Auditores & Consultores y cada
+                una de
+                las firmas miembro de la red.</span>
+        </div>
+    </footer>
+
+
+    <!-- Enlace a main -->
+    <script type="module" src="/src/js/main.js"></script>
+</body>
+
+</html>

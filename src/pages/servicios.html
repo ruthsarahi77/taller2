@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="https://storage.builderall.com//franquias/2/6632050/editor-html/6960627.png">
+  <title>Document</title>
+</head>
+
+<body>
+
+
+  <!-- NAVBAR: Tomado de Flowbite -->
+  <nav class="bg-black w-full z-20 top-0 p-4 start-0 border-b border-gray-200">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
+      <a href="/index.html" class="flex items-center space-x-1 rtl:space-x-reverse">
+        <img src="https://www.abaltecuador.com/images/logo.png" alt="Logo">
+      </a>
+      <div class="flex md:order-2 bg-black md:space-x-0 rtl:space-x-reverse">
+        <button data-collapse-toggle="navbar-sticky" type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+          aria-controls="navbar-sticky" aria-expanded="false">
+          <span class="sr-only">Abrir menú principal</span>
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15" />
+          </svg>
+        </button>
+      </div>
+      <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+        <ul
+          class="flex flex-col p-4 md:p-0 mt-4 font-medium md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+          <li>
+            <a href="/index.html"
+              class="block py-2 px-3 hover:underline rounded-sm md:bg-transparent text-xl text-white hover:text-[#e30613] md:p-0"
+              aria-current="page">Inicio</a>
+          </li>
+          <li>
+            <a href="/src/pages/nosotros.html"
+              class="block py-2 px-3 hover:underline hover:text-[#e30613] rounded-sm text-white  text-xl hover:bg-gray-100 md:hover:bg-transparent md:p-0 ">Nosotros</a>
+          </li>
+          <li>
+            <a href="/src/pages/servicios.html"
+              class="block py-2 px-3 underline rounded-sm  text-xl hover:bg-gray-100 md:hover:bg-transparent md:p-0 text-[#e30613]">Servicios</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Cards: tomado de Flowbite (Card with nav tabs) -->
+  <div class="w-full bg-white border border-gray-200 rounded-lg shadow-sm">
+    <ul class="flex mx-10 flex-wrap text-xl font-medium text-center text-black border-b border-gray-200 bg-gray-50"
+      id="defaultTab" data-tabs-toggle="#defaultTabContent" role="tablist">
+      <li class="me-2">
+        <button id="about-tab" data-tabs-target="#about" type="button" role="tab" aria-controls="about"
+          aria-selected="true" class="inline-block p-4 text-[#3e2118] hover:text-[#e30613] rounded-ss-lg hover:bg-gray-100">Auditoría
+          Financiera</button>
+      </li>
+      <li class="me-2">
+        <button id="services-tab" data-tabs-target="#services" type="button" role="tab" aria-controls="services"
+          aria-selected="false" class="inline-block p-4 hover:text-[#e30613] hover:bg-gray-100">Consultoría administrativa y Tributaria</button>
+      </li>
+      <li class="me-2">
+        <button id="statistics-tab" data-tabs-target="#statistics" type="button" role="tab" aria-controls="statistics"
+          aria-selected="false" class="inline-block p-4 hover:text-[#e30613] hover:bg-gray-100">Consultoría Tributaria</button>
+      </li>
+
+    </ul>
+    <div id="defaultTabContent">
+      <div class="hidden p-4 bg-white rounded-lg md:p-8" id="about" role="tabpanel" aria-labelledby="about-tab">
+        <ul role="list" class="text-lg p-6 text-black">
+          <p class="text-lg font-semibold text-gray-700">
+            La confianza genera éxito:
+          </p>
+          <li class="flex rtl:space-x-reverse items-center">
+            <span class="leading-tight mb-4">Una auditoría de calidad y oportuna es vital para mantener la credibilidad de los estados financieros y la integridad de la información financiera. <br>
+              Es por ello que ofrecemos a nuestros clientes respuestas de alta calidad para mejorar la confiabilidad de la información contable, los controles internos y los riesgos de los procesos acorde a sus crecientes exigencias.
+
+Nuestro trabajo está basado en una metodología centrada en las áreas claves de riesgo de su empresa, obteniendo una mirada no solo al presente sino tendiendo a evitar riesgos a futuro, permitiendo alcanzar los objetivos fijados, tanto en lo referente a requerimientos legales y regulatorios, además de cumplir con todas las normas nacionales e internacionales que regulan la profesión, en un marco de eficiencia y productividad.
+            </span>
+          </li>
+
+          <p class="text-lg font-semibold text-gray-700">
+            Mercado de valores:
+          </p>
+          <li class="flex rtl:space-x-reverse items-center">
+            <span class="leading-tight mb-4">Los servicios que ofrecemos cumplen los parámetros que determinan las Normas Internacionales de Auditoria, por esta razón se realiza una evaluación guiándose en todas las características de cada empresa. Los honorarios se establecen según la realidad de cada organización y un análisis de las horas estimadas a ejecutar el trabajo. Para los clientes que se encuentren inscritos en el mercado de valores, las tarifas horarias por los servicios profesionales de auditoría de estados financieros van de US$50 a US$100.</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="hidden p-4 bg-white rounded-lg md:p-8" id="services" role="tabpanel" aria-labelledby="services-tab">
+        <h2 class=" font-bold tracking-tight text-xl text-gray-700">Principales áreas de nuestro servicio de asesoría:
+        </h2>
+
+        <!-- List -->
+        <ul role="list" class="text-lg p-6 text-black">
+          <p class="text-lg font-semibold text-gray-700">
+            Normas Internacionales de Información Financiera
+          </p>
+          <li class="flex rtl:space-x-reverse items-center">
+            <span class="leading-tight mb-4">Ofrecemos asesoría especializada en NIIF Plenas y NIIF para PYMES para la determinación de políticas contables, determinación de ajustes en la primera adopción asi como en plena aplicación, determinación de la conciliación tributaria, elaboración de un conjunto completo de estados financieros: estado de situación financiera, estado del resultado y otro resultado integral, estado de cambios en el patrimonial, estado de flujos de efectivo, notas que incluyen un resumen de las políticas contables más significativas y presentación de información a las entidades de control.</span>
+          </li>
+
+          <p class="text-lg font-semibold text-gray-700">
+            Finanzas corporativas
+          </p>
+          <li class="flex rtl:space-x-reverse items-center">
+            <span class="leading-tight mb-4">Hemos desarrollado un rango de servicios especializados para apoyar algunas de las decisiones más difíciles que deben enfrentar un empresario como: comprar una empresa, fusionarse, asociarse, vender su negocio, afrontar una nueva inversión, reestructurar su planeamiento financiero, obtener financiamiento público o privado, colocación de cartera, elaborar su plan de negocio o la evaluación de su proyecto.</span>
+          </li>
+          <p class="text-lg font-semibold text-gray-700">
+            Control Interno
+          </p>
+          <li class="flex rtl:space-x-reverse items-center">
+            <span class="leading-tight mb-4">La globalización está cambiando nuestro mundo, sus horizontes se han ampliado.
+<br>
+Por lo cual a nivel mundial las organizaciones se enfrentan a constantes desafíos y preocupaciones en materia de eficiencia y eficacia de sus operaciones y procesos, ofrecemos a nuestros clientes ayudarles en este proceso por medio de los siguientes servicios: diagnóstico organizacional, mejora de procesos, determinación del plan de auditoría interna anual, evaluación de riesgos para la planificación estratégica de auditoría interna, servicios de outsourcing y co-sourcing de auditoría interna, implementación del comité de auditoría y asesoría durante su actuación, revisión de la calidad de la gestión de auditoría interna, realización de actividades y revisiones específicas, auditoría de sistemas, entre otros.</span>
+          </li>
+        </ul>
+      </div>
+
+
+      <div class="hidden bg-white rounded-lg md:p-8" id="statistics" role="tabpanel"
+        aria-labelledby="statistics-tab">
+        <ul class="text-lg p-6">
+            <li class="mb-2"> ● Revisión de cumplimiento tributario</li>
+            <li class="mb-2"> ● Planeación tributaria</li>
+            <li class="mb-2 text-black">● Elaboración de anexos tributarios</li>
+            <li class="mb-2 text-black">● Patrocinio en gestiones administrativas y judiciales de recuperación de liquidez por tributos pagados indebidamente o en exceso.</li>
+              <li class="mb-2 text-black">● Estructuración impositiva en negocios internacionales</li>   
+            <li class="mb-2 text-black">● Administración de impuestos de profesinales y personas naturales</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer: tomado de Flowbite   -->
+  <footer class="bg-black shadow-sm">
+    <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+      <div class="sm:flex sm:items-center sm:justify-between">
+        <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+
+          <span class="self-center text-2xl text-white font-semibold whitespace-nowrap">ABALT Auditores &
+            Consultores</span>
+        </a>
+        <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-white sm:mb-0">
+          <li>
+            <a href="https://www.abaltecuador.com/index.php#templatemo-about" target="_blank"
+              class="hover:underline me-4 md:me-6">Sobre Abalt</a>
+          </li>
+          <li>
+            <a href="https://www.abaltecuador.com/trabaja_con_abalt.html" target="_blank"
+              class="hover:underline me-4 md:me-6">Trabaja con nosotros</a>
+          </li>
+          <li>
+            <a href="https://www.abaltecuador.com/contacto.php" target="_blank" class="hover:underline">Contáctanos</a>
+          </li>
+        </ul>
+      </div>
+      <hr class="my-6 border-gray-200 sm:mx-auto dark:border-white lg:my-8" />
+      <span class="block text-sm text-white sm:text-center">Copyright©2016 ABALTPARTNERS CIA.LTDA., AUDITSOLUTIONS
+        SOLUCIONES DE AUDITORIA INTEGRAL CIA. LTDA. y ABALTBUSINESS ADVISORS CÍA. LTDA. son firmas miembro de la
+        red de
+        empresas asociadas ABALT Auditores.
+        <br>
+        ABALT Auditores & Consultores es el nombre comercial de la red ABALT Auditores & Consultores y de cada
+        una de
+        las empresas asociadas de ABALT Auditores & Consultores. <br>
+
+        Cada una de las firmas miembro, es una entidad legal separada y no tiene ninguna responsabilidad
+        derivada de los
+        actos u omisiones de la otra entidad. Ninguna de las disposiciones o reglas de la red ABALT Auditores &
+        Consultores constituyen o implican una relación de sucursal entre ABALT Auditores & Consultores y cada
+        una de
+        las firmas miembro de la red.</span>
+    </div>
+  </footer>
+
+  <!-- Enlace a main -->
+  <script type="module" src="/src/js/main.js"></script>
+
+</body>
+
+</html>
