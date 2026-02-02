@@ -1,9 +1,9 @@
 import flowbitePlugin from 'flowbite/plugin'
 
 export default {
-  content: [
-    "./*.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
+content: [
+    "./index.html",                
+    "./src/**/*.{html,js,ts,jsx,tsx}",
     "./node_modules/flowbite/**/*.js"
   ],
   theme: {

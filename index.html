@@ -8,16 +8,36 @@
   <title>Inicio</title>
 </head>
 
-<body>
+<body class="bg-gray-50">
 
 
   <!-- NAVBAR: Tomado de Flowbite -->
-  <nav class="bg-black w-full z-20 top-0 p-4 start-0 border-b border-gray-200">
+  <nav class="bg-black/90 w-full z-20 top-0 p-4 start-0 border-b border-gray-200">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto">
       <a href="/index.html" class="flex items-center space-x-1 rtl:space-x-reverse">
         <img src="https://www.abaltecuador.com/images/logo.png" alt="Logo">
       </a>
-      <div class="flex md:order-2 bg-black md:space-x-0 rtl:space-x-reverse">
+      <div class="flex md:order-2 md:space-x-0 rtl:space-x-reverse">
+
+                <a href="/src/pages/carrito.html" class="relative p-2 rounded-full border border-slate-700
+         hover:border-cyan-500 hover:bg-white/5
+         transition-all duration-300
+         focus:outline-none focus:ring-2 focus:ring-cyan-500
+         group">
+
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white group-hover:text-cyan-400" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+          </svg>
+          <span id="carrito-contador" class="absolute -top-1.5 -right-1.5
+         min-w-[18px] h-[18px] px-1 bg-cyan-500 text-[11px] font-bold
+         rounded-full flex items-center justify-center text-white shadow-md
+         scale-100 transition-transform duration-300">
+            0
+          </span>
+        </a>
+
         <button data-collapse-toggle="navbar-sticky" type="button"
           class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
           aria-controls="navbar-sticky" aria-expanded="false">
@@ -41,9 +61,14 @@
               class="block py-2 px-3 text-white hover:underline rounded-sm text-xl hover:bg-gray-100 md:hover:bg-transparent hover:text-[#e30613] md:p-0 ">Nosotros</a>
           </li>
           <li>
-            <a href="/src/pages/contacto.html"
-              class="block py-2 px-3 text-white hover:underline rounded-sm  text-xl hover:bg-gray-100 md:hover:bg-transparent md:p-0 hover:text-[#e30613]">Servicios</a>
+            <a href="/src/pages/cursos.html"
+              class="block py-2 px-3 text-white hover:underline rounded-sm  text-xl hover:bg-gray-100 md:hover:bg-transparent md:p-0 hover:text-[#e30613]">Cursos</a>
           </li>
+           <li>
+            <a href="/src/pages/suscripcion.html"
+              class="block py-2 px-3 text-white hover:underline rounded-sm  text-xl hover:bg-gray-100 md:hover:bg-transparent md:p-0 hover:text-[#e30613]">Suscríbete</a>
+          </li>
+          
         </ul>
       </div>
     </div>
@@ -61,16 +86,16 @@
         contabilidad, auditoría e impuestos.</p>
       <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
         <a href="/src/pages/nosotros.html"
-          class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-black rounded-lg bg-[#a6a6a6] hover:bg-white hover:text-[#e30613] focus:ring-4 focus:ring-blue-300">
+          class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-black rounded-lg bg-gray-50  hover:bg-white hover:text-[#e30613] focus:ring-4 focus:ring-blue-300">
           Sobre Nosotros
           <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" fill="none" viewBox="0 0 14 10">
             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               d="M1 5h12m0 0L9 1m4 4L9 9" />
           </svg>
         </a>
-        <a href="/src/pages/servicios.html"
+        <a href="/src/pages/cursos.html"
           class="inline-flex justify-center items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 hover:text-[#e30613] focus:ring-4 focus:ring-gray-400">
-          Servicios
+          Cursos
           <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" fill="none" viewBox="0 0 14 10">
           </svg>
         </a>
@@ -82,11 +107,11 @@
   <!-- NUESTROS CLIENTES -->
   <!-- Card: tomado de Flowbite -->
 
-  <h5 class="text-xl mt-8 font-extrabold text-center text-[#e30613]">ALGUNOS DE NUESTROS CLIENTES:</h5>
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mb-4">
+  <h5 class="text-xl bg-gray-50 mt-8 font-extrabold text-center text-[#e30613]">ALGUNOS DE NUESTROS CLIENTES:</h5>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mb-4 bg-gray-50">
     <!-- ADEXUS -->
-    <div class="m-4">
-      <div class="w-full max-w-[200px] bg-neutral-primary-soft p-6 transform transition-transform duration-300 hover:scale-[1.1] border border-default rounded-base shadow-xs">
+    <div class="m-4 cliente-card">
+      <div class="w-full max-w-[200px] bg-white bg-neutral-primary-soft p-6 transform transition-transform duration-300 hover:scale-[1.1] hover:border border-default rounded-lg shadow-xs">
         <img class=" rounded-base mb-6" src="https://www.abaltecuador.com/images/logo_cli_2.jpg" alt="product image" />
         <div>
         </div>
@@ -94,8 +119,8 @@
       </div>
     </div>
     <!-- ECOPACIFIC -->
-    <div class="m-4">
-      <div class="w-full max-w-[200px] bg-neutral-primary-soft p-6 transform transition-transform duration-300 hover:scale-[1.1] border border-default rounded-base shadow-xs">
+    <div class="m-4 cliente-card">
+      <div class="w-full max-w-[200px] bg-white bg-neutral-primary-soft p-6 transform transition-transform duration-300 hover:scale-[1.1] hover:border border-default rounded-lg shadow-xs">
         <img class=" rounded-base mb-6" src="https://www.abaltecuador.com/images/logo_cli_7.jpg" alt="product image" />
         <div>
         </div>
@@ -103,8 +128,8 @@
       </div>
     </div>
 <!-- ORIFLAME -->
-    <div class="m-4">
-    <div class="w-full max-w-[200px] bg-neutral-primary-soft p-6 transform transition-transform duration-300 hover:scale-[1.1] border border-default rounded-base shadow-xs">
+    <div class="m-4 cliente-card">
+    <div class="w-full max-w-[200px] bg-white bg-neutral-primary-soft p-6 transform transition-transform duration-300 hover:scale-[1.1] hover:border border-default rounded-lg shadow-xs">
         <img class=" rounded-base mb-6" src="https://www.abaltecuador.com/images/logo_cli_15.jpg" alt="product image" />
       <div>
       </div>
@@ -113,8 +138,8 @@
   </div>
 
   <!-- URBAPARK -->
-    <div class="m-4">
-    <div class="w-full max-w-[200px] bg-neutral-primary-soft p-6 transform transition-transform duration-300 hover:scale-[1.1] border border-default rounded-base shadow-xs">
+    <div class="m-4 cliente-card">
+    <div class="w-full max-w-[200px] bg-white bg-neutral-primary-soft p-6 transform transition-transform duration-300 hover:scale-[1.1] hover:border border-default rounded-lg shadow-xs">
         <img class=" rounded-base mb-6" src="https://www.abaltecuador.com/images/logo_cli_25.jpg" alt="product image" />
       <div>
       </div>
@@ -122,8 +147,8 @@
     </div>
   </div>
 <!-- MILESTONE -->
-    <div class="m-4">
-    <div class="w-full max-w-[200px] bg-neutral-primary-soft p-6 transform transition-transform duration-300 hover:scale-[1.1] border border-default rounded-base shadow-xs">
+    <div class="m-4 cliente-card">
+    <div class="w-full max-w-[200px]  bg-white bg-neutral-primary-soft p-6 transform transition-transform duration-300 hover:scale-[1.1] hover:border border-default rounded-lg shadow-xs">
         <img class=" rounded-base mb-6" src="https://www.abaltecuador.com/images/logo_cli_14.jpg" alt="product image" />
       <div>
       </div>
@@ -133,7 +158,7 @@
   </div>
 
   <!-- Footer: tomado de Flowbite   -->
-  <footer class="bg-black shadow-sm">
+  <footer class="bg-black/90 shadow-sm">
     <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
       <div class="sm:flex sm:items-center sm:justify-between">
         <a href="https://flowbite.com/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
